@@ -28,6 +28,15 @@ const VERSION string = "0.01"
 
 const BUF_SIZE = 65535
 
+//todo
+func enc(raw string) {
+
+}
+
+func dec(raw string) {
+
+}
+
 func checkError(err error, info string) (res bool) {
 	if err != nil {
 		fmt.Println(info + "  " + err.Error())
@@ -140,8 +149,6 @@ func StartServer(port string) {
 		go forwardHandler(&conns, messages, conn)
 	}
 }
-
-
 
 func usage() {
 	fmt.Printf("Usage : gofreedom port  \n")
