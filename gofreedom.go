@@ -19,12 +19,14 @@ import (
 	"fmt"
 	"net"
 	"os"
-	"strings"
 	"reflect"
+	"strings"
+	"./glog"
 )
 
-func checkError(err error, info string) (res bool) {
+const BUF_SIZE = 65535
 
+func checkError(err error, info string) (res bool) {
 	if err != nil {
 		fmt.Println(info + "  " + err.Error())
 		return false
@@ -34,8 +36,7 @@ func checkError(err error, info string) (res bool) {
 
 func Handler(conn net.Conn, messages chan string) {
 	fmt.Println("connection is connected from ...", conn.RemoteAddr().String())
-
-	buf := make([]byte, 4096)
+	buf := make([]byte, BUF_SIZE)
 	for {
 		lenght, err := conn.Read(buf)
 		if checkError(err, "Connection") == false {
@@ -45,10 +46,8 @@ func Handler(conn net.Conn, messages chan string) {
 		if lenght > 0 {
 			buf[lenght] = 0
 		}
-		
+
 		reciveStr := string(buf[0:lenght])
-		fmt.Println("client header: ")
-		fmt.Println(reciveStr)
 		messages <- reciveStr
 	}
 }
@@ -57,11 +56,10 @@ func getHostIP(buf string) string {
 	for _, s := range strings.Split(buf, "\n") {
 		index := strings.Index(s, "Host:")
 		if index != -1 {
-			host := s[6:len(s)-1]
+			host := s[6 : len(s)-1]
 			fmt.Println(host)
 			fmt.Println(reflect.TypeOf(host))
 			ipaddr, err := net.ResolveIPAddr("ip", string(host))
-			//ipaddr, err := net.ResolveTCPAddr("tcp", string(host + ":80"))
 			if err != nil {
 				fmt.Println(err)
 			}
@@ -79,8 +77,6 @@ func forwardHandler(conns *map[string]net.Conn, messages chan string, conn net.C
 		req_header := <-messages
 
 		ipaddr := getHostIP(req_header)
-		fmt.Println("--------1---------")
-		fmt.Println(req_header)
 
 		conn.Write(upstream(ipaddr+":80", req_header))
 
@@ -96,15 +92,13 @@ func forwardHandler(conns *map[string]net.Conn, messages chan string, conn net.C
 }
 
 func StartServer(port string) {
-	service := ":" + port //strconv.Itoa(port);
+	service := ":" + port
 	tcpAddr, err := net.ResolveTCPAddr("tcp4", service)
 	checkError(err, "ResolveTCPAddr")
 	l, err := net.ListenTCP("tcp", tcpAddr)
 	checkError(err, "ListenTCP")
 	conns := make(map[string]net.Conn)
-	messages := make(chan string, 10)
-
-	//go forwardHandler(&conns, messages)
+	messages := make(chan string, 100)
 
 	for {
 		fmt.Println("Listening ...")
@@ -117,7 +111,7 @@ func StartServer(port string) {
 	}
 }
 
-func upstream(tcpaddr string, req_header string) []byte{
+func upstream(tcpaddr string, req_header string) []byte {
 	tcpAddr, err := net.ResolveTCPAddr("tcp4", tcpaddr)
 	checkError(err, "ResolveTCPAddr")
 	conn, err := net.DialTCP("tcp", nil, tcpAddr)
@@ -125,12 +119,11 @@ func upstream(tcpaddr string, req_header string) []byte{
 
 	_, err = conn.Write([]byte(req_header))
 	if err != nil {
-		fmt.Println("=====================")
 		fmt.Println(err.Error())
 		conn.Close()
 	}
 
-	buf := make([]byte, 65536)
+	buf := make([]byte, BUF_SIZE)
 	for {
 		lenght, err := conn.Read(buf)
 		if checkError(err, "Connection") == false {
@@ -138,22 +131,26 @@ func upstream(tcpaddr string, req_header string) []byte{
 			fmt.Println("Server is dead ...ByeBye")
 			os.Exit(0)
 		}
-		fmt.Println("upstream get:")
-		fmt.Println(string(buf[0:lenght]))
+		fmt.Println("recive upstream response:  ")
+		//fmt.Println(string(buf[0:lenght]))
 		return buf[0:lenght]
 	}
 	return []byte("")
-	
+
 }
 
 func usage() {
-	fmt.Printf("Usage : fq port  \n")
+	fmt.Printf("Usage : gofreedom port  \n")
+}
+
+func version() {
+	fmt.Printf("gofreedom version 0.01 Copyright (c) 2014 Harold Miao (miaohonghit@gmail.com)  \n")
 }
 
 func main() {
-	usage()
+	version()
 	if len(os.Args) != 2 {
-		fmt.Println("Wrong pare")
+		glog.Error("Usage : gofreedom port")
 		os.Exit(0)
 	}
 	StartServer(os.Args[1])
