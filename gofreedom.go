@@ -24,6 +24,8 @@ import (
 	"./glog"
 )
 
+const VERSION string = "0.01"
+
 const BUF_SIZE = 65535
 
 func checkError(err error, info string) (res bool) {
@@ -32,6 +34,33 @@ func checkError(err error, info string) (res bool) {
 		return false
 	}
 	return true
+}
+
+func upstream(tcpaddr string, req_header string) []byte {
+	tcpAddr, err := net.ResolveTCPAddr("tcp4", tcpaddr)
+	checkError(err, "ResolveTCPAddr")
+	conn, err := net.DialTCP("tcp", nil, tcpAddr)
+	checkError(err, "DialTCP")
+
+	_, err = conn.Write([]byte(req_header))
+	if err != nil {
+		fmt.Println(err.Error())
+		conn.Close()
+	}
+
+	buf := make([]byte, BUF_SIZE)
+	for {
+		lenght, err := conn.Read(buf)
+		if checkError(err, "Connection") == false {
+			conn.Close()
+			fmt.Println("Server is dead ...ByeBye")
+			os.Exit(0)
+		}
+		fmt.Println("recive upstream response:  ")
+		//fmt.Println(string(buf[0:lenght]))
+		return buf[0:lenght]
+	}
+	return []byte("")
 }
 
 func Handler(conn net.Conn, messages chan string) {
@@ -63,7 +92,6 @@ func getHostIP(buf string) string {
 			if err != nil {
 				fmt.Println(err)
 			}
-			fmt.Printf("ipaddr:%s \n", ipaddr)
 
 			return ipaddr.String()
 		}
@@ -77,8 +105,10 @@ func forwardHandler(conns *map[string]net.Conn, messages chan string, conn net.C
 		req_header := <-messages
 
 		ipaddr := getHostIP(req_header)
-
-		conn.Write(upstream(ipaddr+":80", req_header))
+		
+		if ipaddr != "" {
+			conn.Write(upstream(ipaddr+":80", req_header))
+		}
 
 		//for key, value := range *conns {
 		//	fmt.Println("connection is connected from ...", key)
@@ -101,7 +131,7 @@ func StartServer(port string) {
 	messages := make(chan string, 100)
 
 	for {
-		fmt.Println("Listening ...")
+		fmt.Printf("Listening on port %s ...\n", port)
 		conn, err := l.Accept()
 		checkError(err, "Accept")
 		fmt.Println("Accepting ...")
@@ -111,40 +141,14 @@ func StartServer(port string) {
 	}
 }
 
-func upstream(tcpaddr string, req_header string) []byte {
-	tcpAddr, err := net.ResolveTCPAddr("tcp4", tcpaddr)
-	checkError(err, "ResolveTCPAddr")
-	conn, err := net.DialTCP("tcp", nil, tcpAddr)
-	checkError(err, "DialTCP")
 
-	_, err = conn.Write([]byte(req_header))
-	if err != nil {
-		fmt.Println(err.Error())
-		conn.Close()
-	}
-
-	buf := make([]byte, BUF_SIZE)
-	for {
-		lenght, err := conn.Read(buf)
-		if checkError(err, "Connection") == false {
-			conn.Close()
-			fmt.Println("Server is dead ...ByeBye")
-			os.Exit(0)
-		}
-		fmt.Println("recive upstream response:  ")
-		//fmt.Println(string(buf[0:lenght]))
-		return buf[0:lenght]
-	}
-	return []byte("")
-
-}
 
 func usage() {
 	fmt.Printf("Usage : gofreedom port  \n")
 }
 
 func version() {
-	fmt.Printf("gofreedom version 0.01 Copyright (c) 2014 Harold Miao (miaohonghit@gmail.com)  \n")
+	fmt.Printf("gofreedom version %s Copyright (c) 2014 Harold Miao (miaohonghit@gmail.com)  \n", VERSION)
 }
 
 func main() {
