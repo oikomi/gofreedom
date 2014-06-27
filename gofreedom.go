@@ -38,11 +38,11 @@ const char* build_time(void) {
 import "C"
 
 var (
-    buildTime = C.GoString(C.build_time())
+	buildTime = C.GoString(C.build_time())
 )
 
 func BuildTime() string {
-    return buildTime
+	return buildTime
 }
 
 const VERSION string = "0.01"
@@ -181,7 +181,7 @@ func version() {
 
 func main() {
 	version()
-	fmt.Printf("built on : %s\n", BuildTime())
+	fmt.Printf("built on %s\n", BuildTime())
 	if len(os.Args) != 2 {
 		glog.Error("Usage : gofreedom port")
 		os.Exit(0)
