@@ -24,6 +24,27 @@ import (
 	"./glog"
 )
 
+
+/*
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+const char* build_time(void) {
+	static const char* psz_build_time = "["__DATE__ " " __TIME__ "]";
+	return psz_build_time;
+}
+*/
+import "C"
+
+var (
+    buildTime = C.GoString(C.build_time())
+)
+
+func BuildTime() string {
+    return buildTime
+}
+
 const VERSION string = "0.01"
 
 const BUF_SIZE = 65535
@@ -160,6 +181,7 @@ func version() {
 
 func main() {
 	version()
+	fmt.Printf("built on : %s\n", BuildTime())
 	if len(os.Args) != 2 {
 		glog.Error("Usage : gofreedom port")
 		os.Exit(0)
