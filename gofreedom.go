@@ -22,6 +22,7 @@ import (
 	"reflect"
 	"strings"
 	"./glog"
+	"./config"
 )
 
 
@@ -183,8 +184,16 @@ func main() {
 	version()
 	fmt.Printf("built on %s\n", BuildTime())
 	if len(os.Args) != 2 {
-		glog.Error("Usage : gofreedom port")
+		glog.Error("Usage : gofreedom config_file")
 		os.Exit(0)
 	}
-	StartServer(os.Args[1])
+	
+	cfg, err := config.LoadConfig(os.Args[1])
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
+	config.DumpConfig(cfg)
+	
+	//StartServer(os.Args[1])
 }
