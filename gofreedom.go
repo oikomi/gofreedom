@@ -23,6 +23,7 @@ import (
 	"strings"
 	"./glog"
 	"./config"
+	"./httpproxy"
 )
 
 
@@ -171,6 +172,11 @@ func StartServer(port string) {
 		go forwardHandler(&conns, messages, conn)
 	}
 }
+//////////////////////////
+
+func StartHttpServer(cfg config.Config) {
+	httpproxy.HTTPProxyServer(cfg)
+}
 
 func usage() {
 	fmt.Printf("Usage : gofreedom port  \n")
@@ -194,6 +200,6 @@ func main() {
 		return
 	}
 	config.DumpConfig(cfg)
-	
+	StartHttpServer(cfg)
 	//StartServer(os.Args[1])
 }
