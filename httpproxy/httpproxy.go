@@ -24,7 +24,7 @@ import (
 	"net"
 	"os"
 	"net/http/httputil"
-	//"strings"
+	"strings"
 	"../config"
 	"../utils"
 	"../httplib"
@@ -78,15 +78,21 @@ func upstream(tcpaddr string, req_header []byte) []byte {
 }
 
 func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(r.RequestURI)
-	p.logger.Println("req from " + r.RemoteAddr)
+	//fmt.Println(r.RequestURI)
+	p.logger.Printf("req from %s visit %s \n" , r.RemoteAddr, r.RequestURI)
+	
+	if r.Method == "CONNECT" {
+		p.Connect(w, r)
+		return
+	}
 	tcpaddr, err := utils.GetHostIP(r.Host)
 	if tcpaddr == "" {
 		return 
 	}
 	dump , err := httputil.DumpRequest(r, false)
-	fmt.Println(string(dump))
+	//fmt.Println(string(dump))
 	if err != nil {
+		fmt.Println(string(dump))
 		return
 	}
 
@@ -107,6 +113,38 @@ func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(httplib.StatusInternalServerError)
 		return
 	}
+}
+
+
+func (p *HTTPProxy) Connect(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Connect")
+	hij, ok := w.(http.Hijacker)
+	if !ok {
+		p.logger.Fatal("httpserver does not support hijacking")
+		return
+	}
+	srcconn, _, err := hij.Hijack()
+	if err != nil {
+		p.logger.Fatal("Cannot hijack connection ", err)
+		return
+	}
+	defer srcconn.Close()
+
+	host := r.URL.Host
+	if !strings.Contains(host, ":") {
+		host += ":80"
+	}
+	dstconn, err := net.Dial("tcp", host)
+	if err != nil {
+		p.logger.Fatal("dial failed:", err)
+		srcconn.Write([]byte("HTTP/1.0 502 OK\r\n\r\n"))
+		return
+	}
+	//srcconn.Write([]byte("HTTP/1.0 200 OK\r\n\r\n"))
+	srcconn.Write([]byte("HTTP/1.1 200 Connection Established\r\n\r\n"))
+
+	utils.CopyLink(srcconn, dstconn)
+	return
 }
 
 func HTTPProxyServer(cfg *config.Config, logger *log.Logger) {
