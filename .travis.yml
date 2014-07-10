@@ -1,0 +1,13 @@
+language: go
+go:
+  - 1.2
+  - tip
+script: make build
+install: 
+
+notifications:
+  email:
+    recipients:
+      - miaohonghit@gmail.com
+    on_success: never
+    on_failure: change
