@@ -3,6 +3,23 @@ gofreedom
 
 You know what I mean ...
 
+Build and Install
+=====
+    git clone https://github.com/oikomi/gofreedom.git
+    cd gofreedom
+    make
+
+
+Test
+=====
+
+
+
+Status
+======
+
+It is *not* usable yet and still under early development.
+
 
 Copyright & License
 ===================
