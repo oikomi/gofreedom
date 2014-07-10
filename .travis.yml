@@ -3,7 +3,7 @@ go:
   - 1.2
   - tip
 script: make build
-install: 
+install:
 
 notifications:
   email:
