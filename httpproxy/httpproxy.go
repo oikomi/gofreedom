@@ -82,7 +82,10 @@ func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	p.logger.Printf("req from %s visit %s \n" , r.RemoteAddr, r.RequestURI)
 	
 	if r.Method == "CONNECT" {
-		p.Connect(w, r)
+		fmt.Println(r.RequestURI)
+		t , _ := httputil.DumpRequest(r, false)
+		fmt.Println(string(t))
+		p.connect(w, r)
 		return
 	}
 	tcpaddr, err := utils.GetHostIP(r.Host)
@@ -115,8 +118,12 @@ func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+//func (p *HTTPProxy) send_tunnel_ok(dst, src io.ReadWriteCloser) {
+//	utils.CopyLink(srcconn, dstconn)
+	
+//}
 
-func (p *HTTPProxy) Connect(w http.ResponseWriter, r *http.Request) {
+func (p *HTTPProxy) connect(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Connect")
 	hij, ok := w.(http.Hijacker)
 	if !ok {
@@ -135,15 +142,16 @@ func (p *HTTPProxy) Connect(w http.ResponseWriter, r *http.Request) {
 		host += ":80"
 	}
 	dstconn, err := net.Dial("tcp", host)
+
 	if err != nil {
 		p.logger.Fatal("dial failed:", err)
 		srcconn.Write([]byte("HTTP/1.0 502 OK\r\n\r\n"))
 		return
 	}
-	//srcconn.Write([]byte("HTTP/1.0 200 OK\r\n\r\n"))
 	srcconn.Write([]byte("HTTP/1.1 200 Connection Established\r\n\r\n"))
 
 	utils.CopyLink(srcconn, dstconn)
+	
 	return
 }
 

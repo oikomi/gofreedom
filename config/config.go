@@ -28,7 +28,6 @@ type Config struct {
 	Server string
 
 	Logfile    string
-	Loglevel   string
 	AdminIface string
 
 	Cipher    string

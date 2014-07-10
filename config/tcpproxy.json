@@ -1,10 +1,9 @@
 {
     "mode": "tcpproxy",
-    "listen": ":9999",
+    "listen": ":5233",
     "server": "localhost:9999",
 
     "logfile": "tcpproxy.log",
-    "loglevel": "INFO",
 
     "key": "toqq7QrjCSKSkT2wW6TtWQ==",
 

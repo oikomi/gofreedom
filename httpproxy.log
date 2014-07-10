@@ -1,187 +1,224 @@
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59645 visit http://clickm.soufun.com/click/clickstat.php?&random=0.8162954966167156&prefix=dsy&hostname=sh.soufun.com&url=http%3A//sh.soufun.com/&div=dsy_B01_10&href=http%3A//sh.soufun.com/&width=1600&x=437&y=189&g=x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2&u=U_x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2&i=i&folder=shdsy 
+2014/07/11 08:51:20 httpproxy.go:82: req from 192.168.159.1:64329 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59648 visit http://sh.soufun.com/ 
+2014/07/11 08:51:22 httpproxy.go:82: req from 192.168.159.1:64363 visit www.google-analytics.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59645 visit http://show3.soufun.com/afp/door/;ap=F15B72B4_88BF_EA4C_0664_1F5206518A92;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:22 httpproxy.go:82: req from 192.168.159.1:64365 visit collector.githubapp.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59658 visit http://show3.soufun.com/afp/door/;ap=BBA53CD8_73C6_7DCD_0A3C_312EEE08C338;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:23 httpproxy.go:82: req from 192.168.159.1:64371 visit avatars1.githubusercontent.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59659 visit http://show3.soufun.com/afp/door/;ap=B1330621_B555_A2AE_BA91_A01DDDE23215;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:24 httpproxy.go:82: req from 192.168.159.1:64380 visit collector.githubapp.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59660 visit http://show3.soufun.com/afp/door/;ap=DEB29AE0_F77C_0010_A2B0_AEAA667CEA06;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64403 visit collector.githubapp.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59661 visit http://show3.soufun.com/afp/door/;ap=A8847518_58BC_43C7_B5B0_4DA82A5384A5;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64406 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59662 visit http://show3.soufun.com/afp/door/;ap=1E2706CC_9312_A23E_3EFD_5018B9F1C02D;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64405 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59663 visit http://show3.soufun.com/afp/door/;ap=922C4806_AF43_5894_E6EA_731B3E0BCCC6;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64407 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59665 visit http://show3.soufun.com/afp/door/;ap=5CDD2256_5336_2A68_2FAE_BDCE9F2B2BFE;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64408 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59666 visit http://show3.soufun.com/afp/door/;ap=81ECA898_C649_E1D8_AB50_9E33A52E4A1B;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64409 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59664 visit http://show3.soufun.com/afp/door/;ap=FEA74B46_B846_B047_866C_6E3AF1039DED;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:51:29 httpproxy.go:82: req from 192.168.159.1:64457 visit live.github.com:443 
+43 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59677 visit http://show3.soufun.com/afp/door/;ap=9353F7FF_AEB9_482F_8CA3_E2E8DDD099A8;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:34 httpproxy.go:82: req from 192.168.159.1:58733 visit avatars1.githubusercontent.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59678 visit http://show3.soufun.com/afp/door/;ap=30FCD103_5DAB_3071_93FF_B80C91301F7B;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:34 httpproxy.go:82: req from 192.168.159.1:58734 visit avatars2.githubusercontent.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59679 visit http://show3.soufun.com/afp/door/;ap=2CF06B4D_83BD_222A_9D0F_C04B48B2AE6A;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:34 httpproxy.go:82: req from 192.168.159.1:58735 visit avatars3.githubusercontent.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59681 visit http://show3.soufun.com/afp/door/;ap=FCE2447D_F242_A041_BD4B_87DD59E6C8DB;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:35 httpproxy.go:82: req from 192.168.159.1:58771 visit collector.githubapp.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59682 visit http://show3.soufun.com/afp/door/;ap=99C6274E_30A7_F97D_BBAF_D54488CD5FE9;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:37 httpproxy.go:82: req from 192.168.159.1:58822 visit collector.githubapp.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59683 visit http://show3.soufun.com/afp/door/;ap=40E72493_6E62_C0C7_E388_BA2D1938E0DC;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:38 httpproxy.go:82: req from 192.168.159.1:58836 visit live.github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59684 visit http://show3.soufun.com/afp/door/;ap=42407989_E4C5_B05C_E656_CD84E4857077;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:39 httpproxy.go:82: req from 192.168.159.1:58862 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59685 visit http://show3.soufun.com/afp/door/;ap=47EEA4F4_9298_AB6A_44D5_7C49C6D51A9A;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:41 httpproxy.go:82: req from 192.168.159.1:58917 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59686 visit http://show3.soufun.com/afp/door/;ap=62ABF243_4604_C5DC_EEBA_D2EE6EE878E2;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:41 httpproxy.go:82: req from 192.168.159.1:58918 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59687 visit http://show3.soufun.com/afp/door/;ap=7DEA689F_F7C9_DF85_3299_E3349CA88374;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:41 httpproxy.go:82: req from 192.168.159.1:58919 visit github.com:443 
 
-2014/07/11 07:43:05 httpproxy.go:82: req from 192.168.159.1:59688 visit http://show3.soufun.com/afp/door/;ap=09711EAB_E036_36BF_329E_E5BADBA7B27A;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:41 httpproxy.go:82: req from 192.168.159.1:58920 visit github.com:443 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59648 visit http://show3.soufun.com/afp/door/;ap=38F19F33_FDA5_2FCD_9C86_C064FFA0C4EF;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:41 httpproxy.go:82: req from 192.168.159.1:58921 visit github.com:443 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59688 visit http://show3.soufun.com/afp/door/;ap=05870FC7_5DC5_2039_6FC8_9758BBECD619;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:47:53 httpproxy.go:82: req from 192.168.159.1:59163 visit assets-cdn.github.com:443 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59683 visit http://show3.soufun.com/afp/door/;ap=256DD6A1_95FC_4F14_5FA1_5DCC8B53D8B3;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:48:00 httpproxy.go:82: req from 192.168.159.1:59303 visit avatars1.githubusercontent.com:443 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59678 visit http://show3.soufun.com/afp/door/;ap=DBC9CD21_347D_6D93_57C9_1062435555BD;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:48:31 httpproxy.go:82: req from 192.168.159.1:60142 visit github.com:443 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59677 visit http://show3.soufun.com/afp/door/;ap=3F561E24_A34A_C083_EBA3_6D1E671419DD;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:50:22 httpproxy.go:82: req from 192.168.159.1:62872 visit safebrowsing.google.com:443 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59686 visit http://show3.soufun.com/afp/door/;ap=06E6A9B8_1791_A67A_DAFB_2959E1634A6E;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:50:43 httpproxy.go:147: dial failed:dial tcp 173.194.127.8:443: connection refused
+t http://img1.soufun.com/secondhouse/image/login/icon01.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59665 visit http://show3.soufun.com/afp/door/;ap=BC5CD47A_AD78_4107_B2E3_6A369EE9C33A;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:19 httpproxy.go:82: req from 192.168.159.1:35530 visit http://img1.soufun.com/secondhouse/image/login/icon03.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59679 visit http://show3.soufun.com/afp/door/;ap=EDB58EE2_CA5A_C4B4_8A5C_313B2EBB1028;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:19 httpproxy.go:82: req from 192.168.159.1:35527 visit http://img1.soufun.com/secondhouse/image/login/icon02.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59685 visit http://show3.soufun.com/afp/door/;ap=DD89BDFB_ABEE_2879_05DD_DABC69146C9B;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:19 httpproxy.go:82: req from 192.168.159.1:35480 visit http://www.google-analytics.com/ga.js 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59681 visit http://show3.soufun.com/afp/door/;ap=372BFDEE_D38A_9AF7_644E_F5D0ABDAB36F;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:19 httpproxy.go:82: req from 192.168.159.1:35478 visit http://countpvn.light.soufun.com/countpv?v=1.25^b=24^f=0^l=http://agent.soufun.com/^r=http://sh.soufun.com/^g=x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2^u=U_x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2^c=1^a=0^s=nnnh/aann^m=14^t=%E6%90%9C%E6%88%BF%E5%B8%AE%E7%99%BB%E5%BD%95^i=0^1405009941241 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59666 visit http://show3.soufun.com/afp/door/;ap=5DC3B371_A3DA_6246_F172_DA2B1604F719;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:19 httpproxy.go:82: req from 192.168.159.1:35480 visit http://www.google-analytics.com/__utm.gif?utmwv=5.5.3&utms=1&utmn=431293873&utmhn=agent.soufun.com&utmcs=gbk&utmsr=1600x900&utmvp=1108x438&utmsc=24-bit&utmul=zh-cn&utmje=0&utmfl=14.0%20r0&utmdt=%E6%90%9C%E6%88%BF%E5%B8%AE%E7%99%BB%E5%BD%95&utmhid=2116456484&utmr=http%3A%2F%2Fsh.soufun.com%2F&utmp=%2F&utmht=1405009941301&utmac=UA-24830445-3&utmcc=__utma%3D77873355.394349413.1405000904.1405006318.1405009941.3%3B%2B__utmz%3D77873355.1405009941.3.2.utmcsr%3Dsh.soufun.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F%3B&utmu=qBEg~ 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59659 visit http://show3.soufun.com/afp/door/;ap=FF708A0D_FBFE_7094_999E_96CC6063DC0C;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:21 httpproxy.go:82: req from 192.168.159.1:35529 visit http://agent.soufun.com/favicon.ico 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59645 visit http://show3.soufun.com/afp/door/;ap=04ED204F_0F6D_F4B1_7B71_D358F85633E6;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:21 httpproxy.go:82: req from 192.168.159.1:35529 visit http://clickm.soufun.com/click/clickstat.php?&random=0.8672313073433816&prefix=agentsy&hostname=agent.soufun.com&url=http%3A//agent.soufun.com/&div=agentsy_B02_13&href=&width=1600&x=331&y=110&g=x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2&u=U_x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2&i=i 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59687 visit http://show3.soufun.com/afp/door/;ap=52F5800F_D480_1E07_B5C7_F13C737F9C86;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:21 httpproxy.go:82: req from 192.168.159.1:35478 visit http://agent.soufun.com/favicon.ico 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59684 visit http://show3.soufun.com/afp/door/;ap=9B3B95B9_D58C_3EBC_D35B_A68238822247;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:21 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=getuuid 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59682 visit http://show3.soufun.com/afp/door/;ap=4FEA4005_D848_E389_0D36_3C98E196BBF0;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:21 httpproxy.go:82: req from 192.168.159.1:35530 visit http://img1.soufun.com/secondhouse/image/login/icon04.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59664 visit http://show3.soufun.com/afp/door/;ap=866B72B8_D142_B2AD_7DEF_1EB05BF6FC6A;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:21 httpproxy.go:82: req from 192.168.159.1:35529 visit http://agent.soufun.com/QrImg.aspx?action=getimg&uuid=55f463ecee7a4b9f8a98766975f8723b 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59663 visit http://show3.soufun.com/afp/door/;ap=AD3F086C_3C0D_6C41_96BD_4E33FCB8CAF7;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:21 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59660 visit http://show3.soufun.com/afp/door/;ap=70FD3A15_D8D5_B967_C25E_2C971B01AC36;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35529 visit http://clickm.soufun.com/click/clickstat.php?&random=0.027409860289950405&prefix=agentsy&hostname=agent.soufun.com&url=http%3A//agent.soufun.com/&div=agentsy_B01_01&href=http%3A//zu.soufun.com/&width=1600&x=658&y=35&g=x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2&u=U_x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2&i=i 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59662 visit http://show3.soufun.com/afp/door/;ap=01D9ED90_A1EE_8E9D_CE42_A539B030FDCE;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35529 visit http://zu.soufun.com/ 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59661 visit http://show3.soufun.com/afp/door/;ap=1BB9C160_734B_EAE9_8A45_8F9D22DEBC95;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35529 visit http://zu.sh.soufun.com/ 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59658 visit http://show3.soufun.com/afp/door/;ap=CF791569_DBE0_E7E1_5114_CC9F836E2627;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35529 visit http://img1.soufun.com/rent/image/rent/styles/head20120821.css 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59703 visit http://show3.soufun.com/afp/door/;ap=1AFF140E_A541_0AC9_4E51_D953DD4C215E;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35480 visit http://img1.soufun.com/rent/image/rent/styles/zudefault20120418.css?v=%202014071002 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59704 visit http://show3.soufun.com/afp/door/;ap=76D4F3E5_18D1_CF42_831D_20C43110B542;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35529 visit http://show3.soufun.com/afp/door/;ap=80C41AC8_2C65_71D9_F1E2_3A8B5CF3B62E;ct=js;pu=p28ed0b92e3713250001;/? 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59705 visit http://show3.soufun.com/afp/door/;ap=EE7393D5_5E5B_DA54_6165_6CEC3491623D;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35480 visit http://img1.soufun.com/rent/image/rent/js/jquery-1.4.2.min.js 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59706 visit http://show3.soufun.com/afp/door/;ap=A01E1419_B41C_8115_653E_0652F1FBA635;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35548 visit http://img1.soufun.com/secondhouse/image/js/%c9%cf%ba%a3_RentCity.js?v=20140710 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59707 visit http://show3.soufun.com/afp/door/;ap=C2322339_98DA_505C_A2DC_98B7CB8F16E3;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35527 visit http://img.soufun.com/rent/image/rent/js/test/SuggestionNew2013_1.js?v=f20140710 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59708 visit http://show3.soufun.com/afp/door/;ap=A309A377_D7EE_7AB3_7B8B_1640F298434B;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35528 visit http://img1.soufun.com/rent/image/rent/scripts/root.xmlnode.js?v=20140710 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59710 visit http://show3.soufun.com/afp/door/;ap=47C85D74_6011_6A38_4B45_A8176AF4E772;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35530 visit http://img1.soufun.com/rent/image/rent/scripts/root.xml.js?v=20140710 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59711 visit http://show3.soufun.com/afp/door/;ap=E91A8C3B_8560_1BB5_5AE2_0A429B36185A;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35478 visit http://img.soufun.com/rent/image/rent/scripts/rentinfo/xmlhttpnew.js?201407 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59712 visit http://show3.soufun.com/afp/door/;ap=1A1FE1C2_EFF4_BB53_BC9E_5414EE185E22;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35671 visit http://img.soufun.com/rent/image/rent/js/SearchResultNew2013.js?v=20140710 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59713 visit http://show3.soufun.com/afp/door/;ap=889E2070_2589_448A_E005_BEF5B8B98FB6;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35672 visit http://img1.soufun.com/rent/image/rent/scripts/Behavioural_app20121112a.js 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59688 visit http://show3.soufun.com/afp/door/;ap=A257DF3E_1DBA_3C4A_1A07_D6E35551FD7A;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35673 visit http://img.soufun.com/rent/image/rent/image/shouyeliebiaoyefuchuang150X150.jpg 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59648 visit http://show3.soufun.com/afp/door/;ap=5E35AC72_FC59_1B9D_B71C_820D68E6ABB9;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35674 visit http://img.soufun.com/rent/image/rent/styles/img/hot.png 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59681 visit http://show3.soufun.com/afp/door/;ap=76623E09_D798_2E65_39B0_226C6FF1A2B6;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35675 visit http://img.soufun.com/rent/image/rent/image/rzTitle.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59677 visit http://show3.soufun.com/afp/door/;ap=2552CB9B_3132_AF57_1825_2083C9C26DC8;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35676 visit http://img.soufun.com/rent/image/rent/image/icoPersonHouse.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59685 visit http://show3.soufun.com/afp/door/;ap=4A1ED97D_FDE8_E5CC_834F_5F495F0BB5B3;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35528 visit http://img.soufun.com/rent/image/rent/styles/img/headsearch/searchnew110615.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59665 visit http://show3.soufun.com/afp/door/;ap=93A5F8B8_DAFA_4406_5AA3_5137BB0D5A46;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35530 visit http://img.soufun.com/rent/image/rent/styles/img/headsearch/searchnew11061501.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59679 visit http://show3.soufun.com/afp/door/;ap=4F57127D_A885_AE98_D5F3_71FA6D9E4877;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35677 visit http://img.soufun.com/rent/image/rent/styles/img/default/icon_rent.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59666 visit http://show3.soufun.com/afp/door/;ap=22464A98_D5FD_7372_5CA3_B4CC0E6090DD;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35671 visit http://img.soufun.com/rent/image/rent/image/dotBlue.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59686 visit http://show3.soufun.com/afp/door/;ap=68755671_568F_0675_B007_1430DC81561A;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35675 visit http://img.soufun.com/rent/image/rent/styles/img/default/quicksearch_line.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59645 visit http://show3.soufun.com/afp/door/;ap=F155C138_BAEA_A4CC_901B_8741A2236180;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35674 visit http://img.soufun.com/rent/image/rent/styles/img/default/nav_line.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59683 visit http://show3.soufun.com/afp/door/;ap=F30B5FF8_910E_07BC_A78F_E0889530B656;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35676 visit http://img.soufun.com/rent/image/rent/styles/img/default/nav_lion.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59678 visit http://show3.soufun.com/afp/door/;ap=F156919B_FC80_73CC_1636_9DC9498FE290;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35672 visit http://img.soufun.com/rent/image/rent/styles/img/default/nav_ul.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59659 visit http://show3.soufun.com/afp/door/;ap=9880BB09_5EA6_9C90_150E_74010E843104;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35527 visit http://imgs.soufun.com/news/2012_10/29/1351499774687.png 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59684 visit http://show3.soufun.com/afp/door/;ap=93B077B9_4615_E297_CA0A_D6F80B618833;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35548 visit http://img.soufun.com/rent/image/rent/styles/img/headsearch/searchnew11061502.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59682 visit http://show3.soufun.com/afp/door/;ap=70400EBE_54A2_E9B2_97E6_3706A0757F5F;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35689 visit http://img.soufun.com/rent/image/rent/styles/img/default/icon_agent.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59706 visit http://show3.soufun.com/afp/door/;ap=43EE26F3_ADA8_1548_41AD_45DF34BDA0E8;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:23 httpproxy.go:82: req from 192.168.159.1:35688 visit http://img.soufun.com/rent/image/rent/styles/img/default/btn_rent.gif 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59703 visit http://show3.soufun.com/afp/door/;ap=B4B89065_3383_ED4F_C674_E2D4B12AF31B;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35529 visit http://img1.soufun.com/home/ad/gz/2014-07-09/9b8ffd99788d6aab2d1a85cc4988f020.jpg 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59661 visit http://show3.soufun.com/afp/door/;ap=8EFD09E8_03DF_D5DC_2395_4A6B7F992B95;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35478 visit http://img2s.soufun.com/js_ub/lsr.htm?r=1405009945890&c=2&p=z&r=1405009945890 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59658 visit http://show3.soufun.com/afp/door/;ap=D5468E28_2926_A26B_DAE2_7CA38F456D13;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35480 visit http://pinggus.soufun.com/estimate/process/makerentflashchart.aspx?dis=3&city=%c9%cf%ba%a3&width=280&height=140 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59707 visit http://show3.soufun.com/afp/door/;ap=EAD5ED11_9AD4_DA27_B71D_DEDA9B128B53;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35529 visit http://zu.sh.soufun.com/zuhouse/PostService/DefaultAD.aspx?r=0.14714917472583144 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59708 visit http://show3.soufun.com/afp/door/;ap=492AD76E_69E5_2DD2_2714_94ADCC106A57;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35529 visit http://www.google-analytics.com/__utm.gif?utmwv=5.5.3&utms=2&utmn=432021019&utmhn=zu.sh.soufun.com&utmcs=gbk&utmsr=1600x900&utmvp=1108x438&utmsc=24-bit&utmul=zh-cn&utmje=0&utmfl=14.0%20r0&utmdt=%E3%80%90%E4%B8%8A%E6%B5%B7%E7%A7%9F%E6%88%BF%E7%BD%91_%E4%B8%8A%E6%B5%B7%E7%A7%9F%E6%88%BF%E4%BF%A1%E6%81%AF%E3%80%91-%20%E6%90%9C%E6%88%BF%E7%BD%91&utmhid=584831672&utmr=http%3A%2F%2Fagent.soufun.com%2F&utmp=%2F&utmht=1405009945973&utmac=UA-24140496-1&utmcc=__utma%3D77873355.394349413.1405000904.1405006318.1405009941.3%3B%2B__utmz%3D77873355.1405009941.3.2.utmcsr%3Dsh.soufun.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F%3B&utmu=qBEg~ 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59687 visit http://show3.soufun.com/afp/door/;ap=5E09FB29_6154_8C5F_DBB7_2CE398948D37;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35528 visit http://countpvs.light.soufun.com/countpv?v=1.25^b=13^f=0^l=http://zu.sh.soufun.com/^r=http://agent.soufun.com/^g=x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2^u=U_x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2^c=1^a=0^s=nnnhhaann^m=15^t=%E3%80%90%E4%B8%8A%E6%B5%B7%E7%A7%9F%E6%88%BF%E7%BD%91_%E4%B8%8A%E6%B5%B7%E7%A7%9F%E6%88%BF%E4%BF%A1%E6%81%AF%E3%80%91-%20%E6%90%9C%E6%88%BF%E7%BD%91^i=0^1405009946002 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59705 visit http://uimgs.jiatx.com/mall/2013_11/20/product/1384922918347_000_o.jpg 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35673 visit http://www.google-analytics.com/__utm.gif?utmwv=5.5.3&utms=4&utmn=1161813670&utmhn=zu.sh.soufun.com&utmcs=gbk&utmsr=1600x900&utmvp=1108x438&utmsc=24-bit&utmul=zh-cn&utmje=0&utmfl=14.0%20r0&utmdt=%E3%80%90%E4%B8%8A%E6%B5%B7%E7%A7%9F%E6%88%BF%E7%BD%91_%E4%B8%8A%E6%B5%B7%E7%A7%9F%E6%88%BF%E4%BF%A1%E6%81%AF%E3%80%91-%20%E6%90%9C%E6%88%BF%E7%BD%91&utmhid=584831672&utmr=http%3A%2F%2Fagent.soufun.com%2F&utmp=%2F&utmht=1405009945993&utmac=UA-24830823-1&utmcc=__utma%3D77873355.394349413.1405000904.1405006318.1405009941.3%3B%2B__utmz%3D77873355.1405009941.3.2.utmcsr%3Dsh.soufun.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F%3B&utmmt=1&utmu=qBEg~ 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59663 visit http://show3.soufun.com/afp/door/;ap=DA31664C_9824_0E4E_5682_B6056DE1D6BD;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35530 visit http://www.google-analytics.com/__utm.gif?utmwv=5.5.3&utms=3&utmn=1568083766&utmhn=zu.sh.soufun.com&utmcs=gbk&utmsr=1600x900&utmvp=1108x438&utmsc=24-bit&utmul=zh-cn&utmje=0&utmfl=14.0%20r0&utmdt=%E3%80%90%E4%B8%8A%E6%B5%B7%E7%A7%9F%E6%88%BF%E7%BD%91_%E4%B8%8A%E6%B5%B7%E7%A7%9F%E6%88%BF%E4%BF%A1%E6%81%AF%E3%80%91-%20%E6%90%9C%E6%88%BF%E7%BD%91&utmhid=584831672&utmr=http%3A%2F%2Fagent.soufun.com%2F&utmp=%2F&utmht=1405009945984&utmac=UA-24830445-1&utmcc=__utma%3D77873355.394349413.1405000904.1405006318.1405009941.3%3B%2B__utmz%3D77873355.1405009941.3.2.utmcsr%3Dsh.soufun.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F%3B&utmmt=1&utmu=qBEg~ 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59712 visit http://show3.soufun.com/afp/door/;ap=942AF229_069A_F45F_C2C8_ADE90B37C259;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35529 visit http://img.soufun.com/rent/image/rent/image/shouyeguanggao300x215.jpg 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59664 visit http://show3.soufun.com/afp/door/;ap=65B535A7_A19B_C5E3_6B07_AD8A09BF5762;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35529 visit http://pinggus.soufun.com/estimate/process/swfobject.js?v=2008 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59662 visit http://show3.soufun.com/afp/door/;ap=FA86C32C_4058_4D5E_BA3C_8F49FF16AF04;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35478 visit http://zu.sh.soufun.com/rent/include/Behavioural_AnalysisHouse.aspx?condition1=&condition2=&condition3=&condition4=&condition5=&r=0.28192569352053953 
 
-2014/07/11 07:43:06 httpproxy.go:82: req from 192.168.159.1:59704 visit http://show3.soufun.com/afp/door/;ap=23121F7C_EB93_5457_82FF_9FDE88F20A51;ct=js;pu=p28ed0b92e3713250001;/? 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35529 visit http://img4.soufunimg.com/viewimage/agents/2014_07/03/M01/0B/EB/wKgHv1O1MmqINMPtAACcUrZn5agAASoEwLHzHYAAJxq415/100x75.jpg 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59648 visit http://imgdn3.soufunimg.com/2014/07/09/sh/gebz/64b9341f58e24ad1902e6c9c149d4832.swf 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35673 visit http://img3n.soufunimg.com/viewimage/agents/2014_07/08/M05/06/35/wKgFklO7deqIHAOnAACG8bq1wqwAAJtDgJ3Gp4AAIcJ461/100x75.jpg 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59645 visit http://www.google-analytics.com/__utm.gif?utmwv=5.5.3&utms=34&utmn=116613664&utmhn=sh.soufun.com&utmcs=gbk&utmsr=1600x900&utmvp=1108x438&utmsc=24-bit&utmul=zh-cn&utmje=0&utmfl=14.0%20r0&utmdt=%E4%B8%8A%E6%B5%B7%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%A8%E6%88%B7-%E6%90%9C%E6%88%BF%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BD%91&utmhid=2108670307&utmr=0&utmp=%2F&utmht=1405006988820&utmac=UA-24829808-1&utmcc=__utma%3D77873355.394349413.1405000904.1405000904.1405006318.2%3B%2B__utmz%3D77873355.1405000904.1.1.utmcsr%3Dbaidu.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F%3B&utmmt=1&utmu=qBEg~ 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35530 visit http://img3n.soufunimg.com/viewimage/agents/2014_07/08/M04/06/35/wKgFk1O7dHqIQN9QAAC80YPKaUcAAJtFADLDD0AALzp913/100x75.jpg 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59705 visit http://www.google-analytics.com/__utm.gif?utmwv=5.5.3&utms=33&utmn=83035982&utmhn=sh.soufun.com&utmcs=gbk&utmsr=1600x900&utmvp=1108x438&utmsc=24-bit&utmul=zh-cn&utmje=0&utmfl=14.0%20r0&utmdt=%E4%B8%8A%E6%B5%B7%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%A8%E6%88%B7-%E6%90%9C%E6%88%BF%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BD%91&utmhid=2108670307&utmr=0&utmp=%2F&utmht=1405006988811&utmac=UA-24140496-1&utmcc=__utma%3D77873355.394349413.1405000904.1405000904.1405006318.2%3B%2B__utmz%3D77873355.1405000904.1.1.utmcsr%3Dbaidu.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F%3B&utmu=qBEg~ 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35480 visit http://img3n.soufunimg.com/viewimage/agents/2014_07/11/M08/06/46/wKgFclO-vM6ICI3zAABzvjyTgUoAAJzfwP82esAAHPW065/100x75.jpg 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59661 visit http://countpvs.light.soufun.com/countpv?v=1.25^b=2^f=0^l=http://sh.soufun.com/^r=http://sh.soufun.com/^g=x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2^u=U_x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2^c=1^a=0^s=nnn//aann^m=6^t=%E4%B8%8A%E6%B5%B7%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%A8%E6%88%B7-%E6%90%9C%E6%88%BF%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BD%91^i=0^1405006988840 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35478 visit http://img4.soufunimg.com/viewimage/agents/2014_07/08/M05/0C/4B/wKgH_FO7cTSIIyG_AAC5xe5oapgAATNhALtpAUAALnd210/100x75.jpg 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59662 visit http://www.google-analytics.com/__utm.gif?utmwv=5.5.3&utms=35&utmn=1528519294&utmhn=sh.soufun.com&utmcs=gbk&utmsr=1600x900&utmvp=1108x438&utmsc=24-bit&utmul=zh-cn&utmje=0&utmfl=14.0%20r0&utmdt=%E4%B8%8A%E6%B5%B7%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%A8%E6%88%B7-%E6%90%9C%E6%88%BF%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BD%91&utmhid=2108670307&utmr=0&utmp=%2F&utmht=1405006988829&utmac=UA-24829808-17&utmcc=__utma%3D77873355.394349413.1405000904.1405000904.1405006318.2%3B%2B__utmz%3D77873355.1405000904.1.1.utmcsr%3Dbaidu.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F%3B&utmmt=1&utmu=qBEg~ 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35671 visit http://img.soufun.com/secondhouse/image/pinggu/js/open-flash-chart.swf 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59705 visit http://imgd2.soufunimg.com/2014/05/16/sh/gebz/c52df0fa9be1413caa11381c9c09f956.jpg 
+2014/07/11 08:32:24 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59645 visit http://imgdn5.soufunimg.com/2014/06/21/sh/gebz/fff4fbc7c65c4f6b8f6a11cec0787a41.jpg 
+2014/07/11 08:32:25 httpproxy.go:82: req from 192.168.159.1:35480 visit http://pinggus.soufun.com/estimate/process/makerentflashchart.aspx?dis=3&city=%c9%cf%ba%a3&width=280&height=140 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59648 visit http://imgdn1.soufunimg.com/2014/07/08/sh/gebz/287b7c49b0884528a8fadcfd14d95bea.swf 
+2014/07/11 08:32:25 httpproxy.go:82: req from 192.168.159.1:35480 visit http://img.soufun.com/secondhouse/image/pinggu/js/open-flash-chart.swf 
 
-2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59705 visit http://imgdn5.soufunimg.com/2014/07/02/sh/gebz/ededcca663d24051aeddc8ea8bbbec04.swf 
+2014/07/11 08:32:42 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:32:43 httpproxy.go:82: req from 192.168.159.1:35480 visit http://zu.sh.soufun.com/favicon.ico 
+
+2014/07/11 08:32:46 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:32:49 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:32:52 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:32:56 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:32:59 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:02 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:05 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:08 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:11 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:14 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:18 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:21 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:24 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:27 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:30 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+
+2014/07/11 08:33:33 httpproxy.go:82: req from 192.168.159.1:35480 visit http://agent.soufun.com/QrImg.aspx?action=chkstat&uuid=55f463ecee7a4b9f8a98766975f8723b 
+9.1:59705 visit http://imgdn5.soufunimg.com/2014/07/02/sh/gebz/ededcca663d24051aeddc8ea8bbbec04.swf 
 
 2014/07/11 07:43:07 httpproxy.go:82: req from 192.168.159.1:59648 visit http://show3.soufun.com/afp/door/;ap=6BF6308A_6EAA_FBD3_5050_DD0A87F0A389;ct=if;pu=p28ed0b92e3713250001;/? 
 
@@ -1064,3 +1101,7 @@
 2014/07/11 07:44:48 httpproxy.go:82: req from 192.168.159.1:62093 visit http://www.google-analytics.com/__utm.gif?utmwv=5.5.3&utms=54&utmn=1063960114&utmhn=home.sh.soufun.com&utmcs=gbk&utmsr=1600x900&utmvp=1108x438&utmsc=24-bit&utmul=zh-cn&utmje=0&utmfl=14.0%20r0&utmdt=%E4%B8%8A%E6%B5%B7%E8%A3%85%E4%BF%AE%E5%AE%B6%E5%B1%85-%E6%90%9C%E6%88%BF%E8%A3%85%E4%BF%AE%E5%AE%B6%E5%B1%85%E7%BD%91&utmhid=909765053&utmr=http%3A%2F%2F8.sh.soufun.com%2Fdongtai%2F&utmp=%2F&utmht=1405007090275&utmac=UA-24829890-1&utmcc=__utma%3D77873355.394349413.1405000904.1405000904.1405006318.2%3B%2B__utmz%3D77873355.1405000904.1.1.utmcsr%3Dbaidu.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2F%3B&utmmt=1&utmu=qBEg~ 
 
 2014/07/11 07:44:48 httpproxy.go:82: req from 192.168.159.1:59962 visit http://countpvs.light.soufun.com/countpv?v=1.25^b=4^f=0^l=http://home.sh.soufun.com/^r=http://8.sh.soufun.com/dongtai/^g=x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2^u=U_x7kaqoqha1aa6rvlqe0lo5phl1nhxg59fk2^c=1^a=0^s=nnnt8aann^m=14^t=%E4%B8%8A%E6%B5%B7%E8%A3%85%E4%BF%AE%E5%AE%B6%E5%B1%85-%E6%90%9C%E6%88%BF%E8%A3%85%E4%BF%AE%E5%AE%B6%E5%B1%85%E7%BD%91^i=0^1405007090327 
+
+2014/07/11 07:46:53 httpproxy.go:82: req from 192.168.159.1:1461 visit safebrowsing.google.com:443 
+
+2014/07/11 07:47:14 httpproxy.go:139: dial failed:dial tcp 173.194.127.46:443: connection refused
