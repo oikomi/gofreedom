@@ -35,10 +35,12 @@ const BUF_SIZE = 65535
 type HTTPProxy struct {
 	//transport http.Transport
 	//mux       *http.ServeMux
+	logger *log.Logger
 }
 
-func NewProxy() (p *HTTPProxy) {
+func NewProxy(logger *log.Logger) (p *HTTPProxy) {
 	p = &HTTPProxy {
+		logger : logger,
 	}
 	return p
 }
@@ -77,6 +79,7 @@ func upstream(tcpaddr string, req_header []byte) []byte {
 
 func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(r.RequestURI)
+	p.logger.Println("req from " + r.RemoteAddr)
 	tcpaddr, err := utils.GetHostIP(r.Host)
 	if tcpaddr == "" {
 		return 
@@ -107,7 +110,7 @@ func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func HTTPProxyServer(cfg *config.Config, logger *log.Logger) {
-	err := http.ListenAndServe(cfg.Listen, NewProxy())
+	err := http.ListenAndServe(cfg.Listen, NewProxy(logger))
 	if err != nil {
 		fmt.Println("ListenAndServe: ", err)
 		logger.Fatal("ListenAndServe: ", err)

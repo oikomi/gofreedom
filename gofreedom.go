@@ -216,8 +216,6 @@ func main() {
 	defer logFile.Close()
 	
 	logger := log.New(logFile,"\r\n", log.Ldate | log.Ltime | log.Lshortfile)
-    logger.Println("normal log 1")
-    logger.Println("normal log 2")
 	config.DumpConfig(&cfg)
 	StartHttpServer(&cfg, logger)
 	//StartServer(os.Args[1])
