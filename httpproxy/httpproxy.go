@@ -19,6 +19,7 @@ import (
 	"net/http"
 	"fmt"
 	"io"
+	"log"
 	//"time"
 	"net"
 	"os"
@@ -40,14 +41,6 @@ func NewProxy() (p *HTTPProxy) {
 	p = &HTTPProxy {
 	}
 	return p
-}
-
-func copyHeader(dst, src http.Header) {
-	for k, vv := range src {
-		for _, v := range vv {
-			dst.Add(k, v)
-		}
-	}
 }
 
 func upstream(tcpaddr string, req_header []byte) []byte {
@@ -98,14 +91,13 @@ func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	
 	//fmt.Println(string(resp))
 
-	
 	resp, err := http.DefaultTransport.RoundTrip(r)
 	if err != nil {
 		w.WriteHeader(httplib.StatusNotFound)
 		return
 	}
 	defer resp.Body.Close()
-	copyHeader(w.Header(), resp.Header)
+	utils.CopyHeader(w.Header(), resp.Header)
 	w.WriteHeader(resp.StatusCode)
 	_ ,err = io.Copy(w, resp.Body)
 	if err != nil {
@@ -114,10 +106,11 @@ func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func HTTPProxyServer(cfg *config.Config) {
+func HTTPProxyServer(cfg *config.Config, logger *log.Logger) {
 	err := http.ListenAndServe(cfg.Listen, NewProxy())
 	if err != nil {
 		fmt.Println("ListenAndServe: ", err)
+		logger.Fatal("ListenAndServe: ", err)
 		return
 	}
 }

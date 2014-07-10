@@ -21,7 +21,8 @@ import (
 	"os"
 	"reflect"
 	"strings"
-	"./glog"
+	"log"
+	//"./glog"
 	"./config"
 	"./httpproxy"
 )
@@ -174,8 +175,8 @@ func StartServer(port string) {
 }
 //////////////////////////
 
-func StartHttpServer(cfg *config.Config) {
-	httpproxy.HTTPProxyServer(cfg)
+func StartHttpServer(cfg *config.Config, logger *log.Logger) {
+	httpproxy.HTTPProxyServer(cfg, logger)
 }
 
 func usage() {
@@ -186,11 +187,19 @@ func version() {
 	fmt.Printf("gofreedom version %s Copyright (c) 2014 Harold Miao (miaohonghit@gmail.com)  \n", VERSION)
 }
 
+func setlog(cfg *config.Config) (lf *os.File, err error){
+	logFile, err := os.OpenFile(cfg.Logfile, os.O_RDWR | os.O_CREATE, 0777)
+	if err != nil {
+        fmt.Printf("open file error=%s\r\n", err.Error())
+        os.Exit(-1)
+    }
+	return logFile, err
+}
+
 func main() {
 	version()
 	fmt.Printf("built on %s\n", BuildTime())
 	if len(os.Args) != 2 {
-		glog.Error("Usage : gofreedom config_file")
 		os.Exit(0)
 	}
 	
@@ -199,7 +208,17 @@ func main() {
 		fmt.Println(err.Error())
 		return
 	}
+	logFile, err := setlog(&cfg)
+	if err != nil {
+        fmt.Printf("open file error=%s\r\n", err.Error())
+        os.Exit(-1)
+    }
+	defer logFile.Close()
+	
+	logger := log.New(logFile,"\r\n", log.Ldate | log.Ltime | log.Lshortfile)
+    logger.Println("normal log 1")
+    logger.Println("normal log 2")
 	config.DumpConfig(&cfg)
-	StartHttpServer(&cfg)
+	StartHttpServer(&cfg, logger)
 	//StartServer(os.Args[1])
 }

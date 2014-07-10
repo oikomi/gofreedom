@@ -18,6 +18,7 @@ package utils
 import (
 	"fmt"
 	"net"
+	"net/http"
 	"io"
 )
 
@@ -28,6 +29,14 @@ func GetHostIP(host string) (ip string, err error) {
 		return "", err
 	}
 	return ipaddr.String(), err
+}
+
+func CopyHeader(dst, src http.Header) {
+	for k, vv := range src {
+		for _, v := range vv {
+			dst.Add(k, v)
+		}
+	}
 }
 
 func CoreCopy(dst io.Writer, src io.Reader) (written int64, err error) {
