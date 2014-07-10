@@ -1,0 +1,13 @@
+{
+    "mode": "tcpproxy",
+    "listen": ":9999",
+    "server": "localhost:9999",
+
+    "logfile": "tcpproxy.log",
+    "loglevel": "INFO",
+
+    "key": "toqq7QrjCSKSkT2wW6TtWQ==",
+
+    "username": "shell",
+    "password": "123"
+}

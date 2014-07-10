@@ -174,7 +174,7 @@ func StartServer(port string) {
 }
 //////////////////////////
 
-func StartHttpServer(cfg config.Config) {
+func StartHttpServer(cfg *config.Config) {
 	httpproxy.HTTPProxyServer(cfg)
 }
 
@@ -199,7 +199,7 @@ func main() {
 		fmt.Println(err.Error())
 		return
 	}
-	config.DumpConfig(cfg)
-	StartHttpServer(cfg)
+	config.DumpConfig(&cfg)
+	StartHttpServer(&cfg)
 	//StartServer(os.Args[1])
 }

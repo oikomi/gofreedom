@@ -19,11 +19,29 @@ import (
 	"net/http"
 	"fmt"
 	"io"
-	"time"
+	//"time"
+	"net"
+	"os"
+	"net/http/httputil"
+	//"strings"
 	"../config"
-	//"../httplib"
+	"../utils"
+	"../httplib"
 )
-type Handler int8 
+
+const BUF_SIZE = 65535
+
+type HTTPProxy struct {
+	//transport http.Transport
+	//mux       *http.ServeMux
+}
+
+func NewProxy() (p *HTTPProxy) {
+	p = &HTTPProxy {
+	}
+	return p
+}
+
 func copyHeader(dst, src http.Header) {
 	for k, vv := range src {
 		for _, v := range vv {
@@ -32,28 +50,74 @@ func copyHeader(dst, src http.Header) {
 	}
 }
 
-func (h *Handler)ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(r.RequestURI)
+func upstream(tcpaddr string, req_header []byte) []byte {
+	tcpAddr, err := net.ResolveTCPAddr("tcp4", tcpaddr)
+	if err != nil {
+		fmt.Println(err.Error())
+		return []byte("")
+	}
+	utils.CheckError(err, "ResolveTCPAddr")
+	conn, err := net.DialTCP("tcp", nil, tcpAddr)
+	utils.CheckError(err, "DialTCP")
 
+	_, err = conn.Write(req_header)
+	if err != nil {
+		fmt.Println(err.Error())
+		conn.Close()
+		return []byte("")
+	}
+
+	buf := make([]byte, BUF_SIZE)
+	for {
+		lenght, err := conn.Read(buf)
+		if utils.CheckError(err, "Connection") == false {
+			conn.Close()
+			fmt.Println("Server is dead ...ByeBye")
+			os.Exit(0)
+		}
+		fmt.Println("recive upstream response:  ")
+		//fmt.Println(string(buf[0:lenght]))
+		return buf[0:lenght]
+	}
+	return []byte("")
+}
+
+func (p *HTTPProxy)ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Println(r.RequestURI)
+	tcpaddr, err := utils.GetHostIP(r.Host)
+	if tcpaddr == "" {
+		return 
+	}
+	dump , err := httputil.DumpRequest(r, false)
+	fmt.Println(string(dump))
+	if err != nil {
+		return
+	}
+
+	//resp := upstream(tcpaddr + ":80", dump)
+	
+	//fmt.Println(string(resp))
+
+	
 	resp, err := http.DefaultTransport.RoundTrip(r)
 	if err != nil {
-		w.WriteHeader(404)
+		w.WriteHeader(httplib.StatusNotFound)
 		return
 	}
 	defer resp.Body.Close()
 	copyHeader(w.Header(), resp.Header)
 	w.WriteHeader(resp.StatusCode)
-	io.Copy(w, resp.Body)
+	_ ,err = io.Copy(w, resp.Body)
+	if err != nil {
+		w.WriteHeader(httplib.StatusInternalServerError)
+		return
+	}
 }
 
-func HTTPProxyServer(cfg config.Config) {
-	port := cfg.Listen
-	s := &http.Server {
-		Addr:    port,
-		Handler: new(Handler),
-		ReadTimeout:    10 * time.Second,
-		WriteTimeout:   10 * time.Second,
-		MaxHeaderBytes: 1 << 20,
+func HTTPProxyServer(cfg *config.Config) {
+	err := http.ListenAndServe(cfg.Listen, NewProxy())
+	if err != nil {
+		fmt.Println("ListenAndServe: ", err)
+		return
 	}
-	s.ListenAndServe()
 }

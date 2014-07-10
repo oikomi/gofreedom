@@ -59,7 +59,7 @@ func LoadConfig(configpath string) (cfg Config, err error) {
 	return
 }
 
-func DumpConfig(cfg Config) {
+func DumpConfig(cfg *Config) {
 	fmt.Printf("Mode: %s\nListen: %s\nServer: %s\nLogfile: %s\n", 
 	cfg.Mode, cfg.Listen, cfg.Server, cfg.Logfile)
 }
