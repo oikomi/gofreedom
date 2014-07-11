@@ -16,7 +16,12 @@ Build and Install
     git clone https://github.com/oikomi/gofreedom.git
     cd gofreedom
     make
-
+	
+Todo
+======
+- encrypt connetion(support aes des...)
+- DNS pollution
+- ...
 
 Copyright & License
 ===================
