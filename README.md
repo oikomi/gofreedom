@@ -17,6 +17,15 @@ Build and Install
     cd gofreedom
     make
 	
+Usage
+=====
+	localserver ---- remoteserver(a vps can anti GFW)
+	
+	./bin/gofreedom ./config/httpproxy.json   (run in localserver)
+	./bin/gofreedom ./config/tcpproxy.json   (run in remoteserver)
+	
+	config your web browser with httpproxy
+	
 Todo
 ======
 - encrypt connetion(support aes des...)
