@@ -4,9 +4,4 @@
     "server": "localhost:5233",
 
     "logfile": "httpproxy.log",
-
-    "key": "toqq7QrjCSKSkT2wW6TtWQ==",
-
-    "username": "shell",
-    "password": "123"
 }

@@ -1,44 +1,43 @@
 
-2014/07/11 08:51:20 httpproxy.go:82: req from 192.168.159.1:64329 visit github.com:443 
+2014/07/11 19:14:31 httpproxy.go:82: req from 192.168.159.1:1601 visit http://imgdn0.soufunimg.com/2014/07/09/sh/gebz/16f6f7f79bb74d678bbf262e70030d65.jpg 
 
-2014/07/11 08:51:22 httpproxy.go:82: req from 192.168.159.1:64363 visit www.google-analytics.com:443 
+2014/07/11 19:14:36 httpproxy.go:82: req from 192.168.159.1:1751 visit github.com:443 
 
-2014/07/11 08:51:22 httpproxy.go:82: req from 192.168.159.1:64365 visit collector.githubapp.com:443 
+2014/07/11 19:14:36 httpproxy.go:82: req from 192.168.159.1:1768 visit http://ocsp.digicert.com/ 
 
-2014/07/11 08:51:23 httpproxy.go:82: req from 192.168.159.1:64371 visit avatars1.githubusercontent.com:443 
+2014/07/11 19:14:36 httpproxy.go:82: req from 192.168.159.1:1768 visit http://ocsp.digicert.com/ 
 
-2014/07/11 08:51:24 httpproxy.go:82: req from 192.168.159.1:64380 visit collector.githubapp.com:443 
+2014/07/11 19:14:39 httpproxy.go:82: req from 192.168.159.1:1831 visit assets-cdn.github.com:443 
 
-2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64403 visit collector.githubapp.com:443 
+2014/07/11 19:14:39 httpproxy.go:82: req from 192.168.159.1:1832 visit assets-cdn.github.com:443 
 
-2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64406 visit github.com:443 
+2014/07/11 19:14:39 httpproxy.go:82: req from 192.168.159.1:1835 visit avatars0.githubusercontent.com:443 
 
-2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64405 visit github.com:443 
+2014/07/11 19:14:39 httpproxy.go:82: req from 192.168.159.1:1858 visit www.google-analytics.com:443 
 
-2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64407 visit github.com:443 
+2014/07/11 19:14:41 httpproxy.go:82: req from 192.168.159.1:1925 visit collector-cdn.github.com:443 
 
-2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64408 visit github.com:443 
+2014/07/11 19:14:42 httpproxy.go:82: req from 192.168.159.1:1955 visit live.github.com:443 
 
-2014/07/11 08:51:26 httpproxy.go:82: req from 192.168.159.1:64409 visit github.com:443 
+2014/07/11 19:14:42 httpproxy.go:82: req from 192.168.159.1:1956 visit collector.githubapp.com:443 
 
-2014/07/11 08:51:29 httpproxy.go:82: req from 192.168.159.1:64457 visit live.github.com:443 
-43 
+2014/07/11 19:14:42 httpproxy.go:82: req from 192.168.159.1:1768 visit http://ocsp.digicert.com/ 
 
-2014/07/11 08:47:34 httpproxy.go:82: req from 192.168.159.1:58733 visit avatars1.githubusercontent.com:443 
+2014/07/11 19:14:42 httpproxy.go:82: req from 192.168.159.1:1768 visit http://ocsp.digicert.com/ 
 
-2014/07/11 08:47:34 httpproxy.go:82: req from 192.168.159.1:58734 visit avatars2.githubusercontent.com:443 
+2014/07/11 19:14:50 httpproxy.go:82: req from 192.168.159.1:2217 visit github.com:443 
 
-2014/07/11 08:47:34 httpproxy.go:82: req from 192.168.159.1:58735 visit avatars3.githubusercontent.com:443 
+2014/07/11 19:14:50 httpproxy.go:82: req from 192.168.159.1:2218 visit github.com:443 
 
-2014/07/11 08:47:35 httpproxy.go:82: req from 192.168.159.1:58771 visit collector.githubapp.com:443 
+2014/07/11 19:14:54 httpproxy.go:82: req from 192.168.159.1:2475 visit github.com:443 
+eq from 192.168.159.1:20580 visit github.com:443 
 
-2014/07/11 08:47:37 httpproxy.go:82: req from 192.168.159.1:58822 visit collector.githubapp.com:443 
+2014/07/11 09:07:25 httpproxy.go:82: req from 192.168.159.1:23761 visit github.com:443 
 
-2014/07/11 08:47:38 httpproxy.go:82: req from 192.168.159.1:58836 visit live.github.com:443 
+2014/07/11 09:22:06 httpproxy.go:82: req from 192.168.159.1:45053 visit safebrowsing.google.com:443 
 
-2014/07/11 08:47:39 httpproxy.go:82: req from 192.168.159.1:58862 visit github.com:443 
-
-2014/07/11 08:47:41 httpproxy.go:82: req from 192.168.159.1:58917 visit github.com:443 
+2014/07/11 09:22:27 httpproxy.go:147: dial failed:dial tcp 173.194.127.0:443: connection refused
+:443 
 
 2014/07/11 08:47:41 httpproxy.go:82: req from 192.168.159.1:58918 visit github.com:443 
 

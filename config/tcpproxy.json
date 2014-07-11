@@ -1,12 +1,6 @@
 {
     "mode": "tcpproxy",
     "listen": ":5233",
-    "server": "localhost:9999",
 
     "logfile": "tcpproxy.log",
-
-    "key": "toqq7QrjCSKSkT2wW6TtWQ==",
-
-    "username": "shell",
-    "password": "123"
 }
