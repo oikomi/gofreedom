@@ -3,22 +3,19 @@
 
 You know what I mean ...
 
-Build and Install
-=====
-    git clone https://github.com/oikomi/gofreedom.git
-    cd gofreedom
-    make
-
-
-Test
-=====
-
-
-
 Status
 ======
 
 It is *not* usable yet and still under early development.
+
+Build and Install
+=====
+    First you should config your golang environment
+	
+	cd  $GOPATH/src
+    git clone https://github.com/oikomi/gofreedom.git
+    cd gofreedom
+    make
 
 
 Copyright & License
